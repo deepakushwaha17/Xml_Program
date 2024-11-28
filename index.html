@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function load(){
+            var request=new XMLHttpRequest();
+            request.open("GET","about.html");
+            request.onreadystatechange=function(){
+                if(this.readyState==4 && this.status==200){
+                    console.log(this.responseText);
+                    document.getElementById("container").innerHTML=this.responseText;
+                    //class
+                    var con=document.getElementsByClassName("cContainer");
+                    con[0].innerHTML=this.responseText;
+                    //tag
+                    var para=document.getElementsByTagName("p");
+                    para[0].innerHTML=this.responseText;
+                    //query
+                    document.querySelector("h5").innerHTML=this.responseText;
+                    //querySelectorAll
+                    var q=document.querySelectorAll(".querSA");
+                    q[0].innerHTML=this.responseText;
+
+                }
+            }
+            request.send();
+
+        }
+    </script>
+</head>
+<body>
+    <h2>AJAX INTRODUCTION</h2>
+    <h4><a href="about.html" >About</a></h4>
+    <button onclick="load()">Load About</button>
+   <div id="container"></div>
+    <div class="cContainer"></div>
+    <p>abc</p>
+    <p>xyz</p>
+    <h5></h5>
+    <div class="querSA"></div>
+
+</body>
+</html>

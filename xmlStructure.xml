@@ -1,0 +1,44 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<quiz>
+    <question id="1" type="multiple-choice">
+        <text>What is the capital of France?</text>
+        <option>A. Berlin</option>
+        <option>B. London</option>
+        <option>C. Paris</option>
+        <option>D. Madrid</option>
+        <answer>C</answer>
+    </question>
+
+    <question id="2" type="true-false">
+        <text>The Earth is the third planet from the Sun.</text>
+        <answer>True</answer>
+    </question>
+
+    <question id="3" type="multiple-choice">
+        <text>What planet is known as the the Red Planet?</text>
+        <option>A. Venus</option>
+        <option>B. Mars</option>
+        <option>C. Jupiter</option>
+        <option>D. Saturn</option>
+        <answer>B</answer>
+    </question>
+
+    <question id="4" type="fill-in-the-blank">
+        <text>The Chemical symbol for water is___</text>
+        <answer>H2O</answer>
+    </question>
+
+    <question id="5" type="multiple-choice">
+        <text>Who wrote "To kill a Mockingbird"?</text>
+        <option>A. Mark Twain</option>
+        <option>B. Harper Lee</option>
+        <option>C. J.K. Rowling</option>
+        <option>D. Charles Dickens</option>
+        <answer>B</answer>
+    </question>
+</quiz>
+
+    
+    
+
+
